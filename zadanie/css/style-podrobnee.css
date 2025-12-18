@@ -1,0 +1,306 @@
+/* Стили для страницы консультации */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.consultation-page {
+    min-height: 100vh;
+    background: 
+        /* Темный градиент поверх изображения */
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        /* Само изображение */
+        url('../assets/загруженное (5).jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.consultation-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    width: 100%;
+}
+
+/* Левая часть - текст */
+.text-content {
+    flex: 1;
+    max-width: 600px;
+    color: white;
+}
+
+.main-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.95;
+    max-width: 500px;
+    font-weight: 400;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Правая часть - форма */
+.form-container {
+    flex: 0 0 380px;
+}
+
+#consultation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Поля формы */
+.form-input {
+    width: 100%;
+    padding: 16px 20px;
+    background-color: white;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50px;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.form-input::placeholder {
+    color: #666;
+    opacity: 0.9;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #d4a574;
+    box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.2);
+}
+
+/* Контейнер для телефона */
+.phone-input-container {
+    position: relative;
+}
+
+.flag-container {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.flag-icon {
+    font-size: 24px;
+}
+
+.country-select {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.phone-input {
+    padding-left: 65px;
+}
+
+/* Чекбокс */
+.checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.checkbox {
+    margin-top: 4px;
+    accent-color: #d4a574;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    color: white;
+    font-size: 14px;
+    line-height: 1.4;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Кнопка */
+.submit-btn {
+    width: 100%;
+    padding: 17px;
+    background-color: #d4a574;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.submit-btn:hover {
+    background-color: #c6955c;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* БУРГЕР МЕНЮ для страницы консультации */
+@media (max-width: 768px) {
+    .burger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 4px;
+        background: none;
+        border: none;
+        padding: 5px;
+    }
+    
+    .burger span {
+        width: 25px;
+        height: 3px;
+        background-color: var(--text-color);
+        border-radius: 2px;
+        transition: var(--transition);
+    }
+    
+    /* Анимация бургера при открытии */
+    .burger.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+    
+    .burger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .burger.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    
+    .navbar {
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+    
+    .nav-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .burger {
+        display: flex;
+    }
+    
+    .phone-link span {
+        display: none;
+    }
+    
+    /* Адаптивность основного контента */
+    .consultation-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        padding: 40px 0;
+    }
+    
+    .text-content {
+        max-width: 100%;
+    }
+    
+    .main-title {
+        font-size: 2.4rem;
+        margin-top: 20px;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .form-container {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .form-input {
+        padding: 14px 18px;
+        font-size: 15px;
+    }
+    
+    .submit-btn {
+        padding: 15px;
+        font-size: 16px;
+    }
+    
+    .phone-input {
+        padding-left: 60px;
+    }
+    
+    .flag-icon {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,170 @@
+/* В style-certificat.css добавьте: */
+body{
+    background-image: url('../assets/JENNIE\ [DEADLINE]\ Weverse\ Membership\ Photocard\ scan.jpg'); /* Путь к вашему изображению */
+    background-size: cover; /* Растягивает изображение на весь экран */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Не повторяет изображение */
+    background-attachment: fixed; /* Фон фиксируется при скролле */
+    backdrop-filter: blur(5px);
+}
+.main-content {
+    padding-top: 100px;
+}
+
+.square {
+    width: 600px;
+    height: 300px;
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto 30px; /* Центрирование и отступ между квадратами */
+}
+
+.square-1 {
+    background-color: #380702;
+}
+.p1 {
+    color: #ffffff; /* Теперь этот стиль имеет приоритет */
+    font-size: 50px; /* Пример дополнительных стилей */
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* СТИЛИ ТОЛЬКО ДЛЯ ВТОРОГО КВАДРАТА */
+.square-2 {
+    background-color: #fff3e3;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.certificate-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.certificate-text h3 {
+    color: #380702;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+
+.certificate-text .subtitle {
+    color: #666;
+    font-size: 1rem;
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.certificate-text .price {
+    color: #380702;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+
+.certificate-text .details {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.certificate-text .details p {
+    margin: 3px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.certificate-text .details strong {
+    color: #380702;
+}
+
+.certificate-text .terms {
+    margin-top: 8px;
+    font-size: 0.75rem;
+    line-height: 1.3;
+    color: #666;
+    overflow-y: auto;
+    max-height: 80px;
+    padding-right: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.certificate-text .terms p {
+    margin: 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .main-content {
+        padding-top: 80px;
+    }
+    
+    .square {
+        width: 90%;
+        height: 280px;
+    }
+    
+    .p1 {
+        font-size: 40px;
+    }
+    
+    .certificate-text h3 {
+        font-size: 1.3rem;
+    }
+    
+    .certificate-text .price {
+        font-size: 1.8rem;
+    }
+    
+    .certificate-text .details {
+        font-size: 0.85rem;
+    }
+    
+    .certificate-text .terms {
+        font-size: 0.7rem;
+        max-height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .square {
+        width: 95%;
+        height: 260px;
+        padding: 15px;
+    }
+    
+    .p1 {
+        font-size: 30px;
+    }
+    
+    .certificate-text h3 {
+        font-size: 1.1rem;
+    }
+    
+    .certificate-text .price {
+        font-size: 1.5rem;
+    }
+    
+    .certificate-text .details {
+        font-size: 0.8rem;
+    }
+    
+    .certificate-text .terms {
+        font-size: 0.65rem;
+        max-height: 60px;
+    }
+}

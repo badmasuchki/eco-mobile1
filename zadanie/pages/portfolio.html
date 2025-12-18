@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио стилиста</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <img src="../assets/mannequin_10770965.png" alt="Логотип стилиста" class="logo"/>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../pages/services.html">Услуги</a></li>
+                    <li><a href="../pages/portfolio.html" class="active">Портфолио</a></li>
+                    <li><a href="../pages/blog.html">Блог</a></li>
+                    <li><a href="../pages/certificat.html">Сертификат</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="tel:+79991234567" class="phone-link"><i class="fas fa-phone"></i> +7 (999) 123-45-67</a>
+                    <div class="sguare-appointment">
+                        <a href="../pages/podrobnee.html" class="btn btn-primary active">Записаться</a>
+                    </div>
+                    <div class="burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="portfolio-header">
+            <h1>Наши работы</h1>
+            <p>Реальные примеры стильных преобразований и созданных образов</p>
+        </div>
+
+        <!-- Слайдер: До/После -->
+        <section class="portfolio-section">
+            <div class="container">
+                <h2 class="section-title">До и После</h2>
+                <p class="section-subtitle">Как мы меняем образы наших клиентов</p>
+                
+                <div class="swiper before-after-slider">
+                    <div class="swiper-wrapper">
+                        <!-- Слайд 1 -->
+                        <div class="swiper-slide">
+                            <div class="comparison-slide">
+                                <div class="comparison-item">
+                                    <div class="image-label">До</div>
+                                    <img src="../assets/1.jpg" alt="До работы">
+                                </div>
+                                <div class="comparison-item">
+                                    <div class="image-label">После</div>
+                                    <img src="../assets/Casual.jpg" alt="После работы">
+                                </div>
+                            </div>
+                            <div class="slide-caption">
+                                <h3>Анна, 32 года</h3>
+                                <p>Обновление делового гардероба для карьерного роста</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Слайд 2 -->
+                        <div class="swiper-slide">
+                            <div class="comparison-slide">
+                                <div class="comparison-item">
+                                    <div class="image-label">До</div>
+                                    <img src="../assets/Our new tunic!.jpg" alt="До работы">
+                                </div>
+                                <div class="comparison-item">
+                                    <div class="image-label">После</div>
+                                    <img src="../assets/3.jpg" alt="После работы">
+                                </div>
+                            </div>
+                            <div class="slide-caption">
+                                <h3>Мария, 28 лет</h3>
+                                <p>Создание капсульного гардероба для путешествий</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Слайд 3 -->
+                        <div class="swiper-slide">
+                            <div class="comparison-slide">
+                                <div class="comparison-item">
+                                    <div class="image-label">До</div>
+                                    <img src="../assets/New Miss Me maxi cream cardigan.jpg" alt="До работы">
+                                </div>
+                                <div class="comparison-item">
+                                    <div class="image-label">После</div>
+                                    <img src="../assets/2.jpg" alt="После работы">
+                                </div>
+                            </div>
+                            <div class="slide-caption">
+                                <h3>Елена, 45 лет</h3>
+                                <p>Определение стилевого направления и подбор гардероба</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
+        <section class="portfolio-section bg-light">
+            <div class="container">
+                <h2 class="section-title">Отзывы клиентов</h2>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Работа со стилистом полностью изменила мой подход к гардеробу. Теперь я трачу меньше времени на сборы и всегда выгляжу уместно!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/150?img=1" alt="Анна">
+                            <div>
+                                <h4>Анна, 32 года</h4>
+                                <span>Маркетолог</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Благодаря капсульному гардеробу мой шкаф перестал быть сборной солянкой. Все вещи сочетаются между собой!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/150?img=5" alt="Мария">
+                            <div>
+                                <h4>Мария, 28 лет</h4>
+                                <span>Дизайнер</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+     <!-- Разделительная линия -->
+    <hr class="line">
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="../pages/services.html">Услуги</a></li>
+                <li><a href="../pages/portfolio.html">Портфолио</a></li>
+                <li><a href="../pages/blog.html.html">Блог</a></li>
+                <li><a href="../pages/certificat.html">Сертификат</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <p class="footer-p1">D. Klimanova</p>
+    <!-- Подключаем Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <!-- Подключаем наш JS файл -->
+    <script src="../js/js.js"></script>
+</body>
+</html>

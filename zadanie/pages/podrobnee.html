@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Консультация стилиста</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-podrobnee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <img src="../assets/mannequin_10770965.png" alt="Логотип стилиста" class="logo"/>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../pages/services.html">Услуги</a></li>
+                    <li><a href="../pages/portfolio.html">Портфолио</a></li>
+                    <li><a href="../pages/blog.html">Блог</a></li>
+                    <li><a href="../pages/certificat.html">Сертификат</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="tel:+79991234567" class="phone-link"><i class="fas fa-phone"></i> +7 (999) 123-45-67</a>
+                    <div class="sguare-appointment">
+                        <a href="../pages/podrobnee.html" class="btn btn-primary active">Записаться</a>
+                    </div>
+                    <!-- БУРГЕР МЕНЮ -->
+                    <div class="burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Основной контент -->
+    <main class="consultation-page">
+        <div class="container">
+            <div class="consultation-content">
+                <!-- Левая часть - текст -->
+                <div class="text-content">
+                    <h1 class="main-title">
+                        Запишитесь<br>
+                        на бесплатную консультацию
+                    </h1>
+                    <p class="subtitle">
+                        Отвечу на ваши вопросы, определим цели для дальнейшего преображения
+                    </p>
+                </div>
+                
+                <!-- Правая часть - форма -->
+                <div class="form-container">
+                    <form id="consultation-form">
+                        <!-- Ваше имя -->
+                        <input type="text" id="name" class="form-input" placeholder="Ваше имя" required>
+                        
+                        <!-- Телефон с флагом -->
+                        <div class="phone-input-container">
+                            <div class="flag-container">
+                                <span class="flag-icon flag-icon-ru"></span>
+                                <select id="country" class="country-select">
+                                    <option value="ru" selected>RU</option>
+                                    <option value="kz">KZ</option>
+                                    <option value="by">BY</option>
+                                    <option value="ua">UA</option>
+                                    <option value="am">AM</option>
+                                    <option value="us">US</option>
+                                    <option value="de">DE</option>
+                                    <option value="fr">FR</option>
+                                </select>
+                            </div>
+                            <input type="tel" id="phone" class="form-input phone-input" placeholder="Номер телефона" required>
+                        </div>
+                        
+                        <!-- Согласие -->
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="consent" class="checkbox" required>
+                            <label for="consent" class="checkbox-label">
+                                Я даю согласие на обработку моих персональных данных
+                            </label>
+                        </div>
+                        
+                        <!-- Кнопка -->
+                        <button type="submit" class="submit-btn">Записаться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+<!-- Футер -->
+    <!-- Разделительная линия -->
+    <hr class="line">
+   <footer class="footer">
+    <div class="container">
+        <ul class="footer-links">
+            <li><a href="../pages/services.html">Услуги</a></li>
+            <li><a href="../pages/portfolio.html">Портфолио</a></li>
+            <li><a href="../pages/blog.html.html">Блог</a></li>
+            <li><a href="../pages/certificat.html">Сертификат</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</footer>
+
+<p class="footer-p1">D. Klimanova</p>
+    <!-- Подключение JavaScript -->
+    <script src="../js/js.js"></script>
+</body>
+</html>
